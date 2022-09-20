@@ -27,6 +27,13 @@ opfor_medic = "CUP_O_TK_Medic";                                         // Medic
 opfor_engineer = "CUP_O_TK_Engineer";                                   // Engineer
 opfor_paratrooper = "CUP_O_TK_Soldier_AKS_74_GOSHAWK";                  // Paratrooper
 
+opfor_hmgGunner = "CFP_O_TBAN_Gunner_Low_DShKM_01";
+opfor_hmgAssistant = "CFP_O_TBAN_Asst_Gunner_DShKM_01";
+opfor_mortarGunner = "CFP_O_TBAN_Gunner_Mortar_01";
+opfor_mortarAssistant = "CFP_O_TBAN_Asst_Gunner_Mortar_01";
+opfor_spgGunner = "CFP_O_TBAN_Gunner_SPG_01";
+opfor_spgAssistant = "CFP_O_TBAN_Asst_Gunner_SPG_01";
+
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "CUP_O_LR_Transport_TKA";                                  // Land Rover 110 (Transport)
 opfor_mrap_armed = "CUP_O_LR_MG_TKA";                                   // Land Rover 110 (M2)
@@ -45,30 +52,36 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-    "CUP_O_TK_INS_Soldier_FNFAL",                                       // Militiaman (FN FAL)
-    "CUP_O_TK_INS_Soldier",                                             // Militiaman (AK-74)
-    "CUP_O_TK_INS_Soldier_GL",                                          // Militiaman (AK-74 GL)
-    "CUP_O_TK_INS_Soldier_TL",                                          // Team Leader
-    "CUP_O_TK_INS_Soldier_AT",                                          // Militiaman (RPG-7)
-    "CUP_O_TK_INS_Soldier_AR",                                          // Automatic Rifleman
-    "CUP_O_TK_INS_Sniper",                                              // Sniper
-    "CUP_O_TK_INS_Guerilla_Medic",                                      // Bonesetter
-    "CUP_O_TK_INS_Mechanic"                                             // Militia Mechanic
+    "CFP_O_TBAN_Rifleman_Lee_Enfield_01",                                       // Militiaman (FN FAL)
+    "CFP_O_TBAN_Rifleman_AK_74_01",                                             // Militiaman (AK-74)
+    "CFP_O_TBAN_Rifleman_AK_47_01",                                          // Militiaman (AK-74 GL)
+    "CFP_O_TBAN_Team_Leader_01",                                          // Team Leader
+    "CFP_O_TBAN_AT_Rifleman_01",                                          // Militiaman (RPG-7)
+    "CFP_O_TBAN_Machine_Gunner_2_01",                                          // Automatic Rifleman
+    "CFP_O_TBAN_Sniper_01",                                              // Sniper
+    "CFP_O_TBAN_Medic_AK_47_01",                                      // Bonesetter
+    "CFP_O_TBAN_Explosive_Specialist_01"                                             // Militia Mechanic
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "CUP_O_LR_MG_TKM",                                                  // Land Rover 110 (M2)
-    "CUP_O_LR_MG_TKM",                                                  // Land Rover 110 (M2)
-    "CUP_O_Hilux_AGS30_TK_INS",                                         // Hilux (AGS-30)
-    "CUP_O_Hilux_DSHKM_TK_INS",                                         // Hilux (DShKM)
-    "CUP_O_Hilux_M2_TK_INS",                                            // Hilux (M2)
+    "CFP_O_TBAN_Technical_PK_01",                                                  // Land Rover 110 (M2)
+    "CFP_O_TBAN_Hilux_DShKM_01",                                                  // Land Rover 110 (M2)
+    "CFP_O_TBAN_Hilux_DShKM_01",                                         // Hilux (DShKM)
     "CUP_O_Hilux_SPG9_TK_INS",                                          // Hilux (SPG-9)
     "CUP_O_Hilux_armored_BMP1_TK_INS",                                  // Hilux Armored (BMP-1)
     "CUP_O_Hilux_armored_BTR60_TK_INS",                                 // Hilux Armored (BTR-60)
     "CUP_O_Hilux_armored_zu23_TK_INS",                                  // Hilux Armored (ZU-23-2)
-    "CUP_O_BTR40_MG_TKM",                                               // BTR-40 (DSHKM)
-    "CUP_O_MTLB_pk_TK_MILITIA"                                          // MT-LB LV
+    "CFP_O_TBAN_BTR_40_DShKM_01",                                               // BTR-40 (DSHKM)
+    "CFP_O_TBAN_Technical_PK_01",                                                  // Land Rover 110 (M2)
+    "CFP_O_TBAN_Hilux_DShKM_01",                                                  // Land Rover 110 (M2)
+    "CFP_O_TBAN_Hilux_DShKM_01",                                         // Hilux (DShKM)
+    "CUP_O_Hilux_SPG9_TK_INS",                                          // Hilux (SPG-9)
+    "CUP_O_Hilux_armored_BMP1_TK_INS",                                  // Hilux Armored (BMP-1)
+    "CUP_O_Hilux_armored_BTR60_TK_INS",                                 // Hilux Armored (BTR-60)
+    "CUP_O_Hilux_armored_zu23_TK_INS",                                  // Hilux Armored (ZU-23-2)
+    "CFP_O_TBAN_BTR_40_DShKM_01",                                               // BTR-40 (DSHKM)
+    "CFP_O_TBAN_BMP_2ZU_23_01"                                          // MT-LB LV
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -142,13 +155,12 @@ opfor_battlegroup_vehicles_low_intensity = [
     "CUP_O_MTLB_pk_TKA",                                                // MT-LB LV
     "CUP_O_BTR60_TK",                                                   // BTR-60PB
     "CUP_O_M113_TKA",                                                   // M113A3
+    "CUP_O_M113_TKA",                                                   // M113A3
     "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
     "CUP_O_BRDM2_TKA",                                                  // BRDM-2
     "CUP_O_BMP1_TKA",                                                   // BMP-1
     "CUP_O_BMP1P_TKA",                                                  // BMP-1P
     "CUP_O_T34_TKA",                                                    // T-34-85M
-    "CUP_O_T34_TKA",                                                    // T-34-85M
-    "CUP_O_BMP2_ZU_TKA",                                                // BMP-2 ZU-23
     "CUP_O_Ural_ZU23_TKA",                                              // Ural (ZU-23)
     "CUP_O_UH1H_TKA",                                                   // UH-1H
     "CUP_O_UH1H_gunship_SLA_TKA",                                       // UH-1H (Gunship)
@@ -159,6 +171,7 @@ opfor_battlegroup_vehicles_low_intensity = [
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.   */
 opfor_troup_transports = [
     "CUP_O_BMP1_TKA",                                                   // BMP-1
+    "CUP_O_M113_TKA",                                                   // M113A3
     "CUP_O_M113_TKA",                                                   // M113A3
     "CUP_O_MTLB_pk_TKA",                                                // MT-LB LV
     "CUP_O_UH1H_TKA",                                                   // UH-1H

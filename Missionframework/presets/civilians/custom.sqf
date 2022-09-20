@@ -8,44 +8,29 @@
 
 // Civilian classnames.
 civilians = [
-    "C_Man_Fisherman_01_F",
-    "C_man_w_worker_F",
-    "C_man_1_1_F",
-    "C_man_p_beggar_F",
-    "C_Man_Messenger_01_F",
-    "C_man_hunter_1_F",
-    "C_journalist_F",
-    "C_Journalist_01_War_F",
-    "C_man_shorts_2_F",
-    "C_Man_UtilityWorker_01_F",
-    "C_man_1",
-    "C_Man_casual_1_F",
-    "C_Man_casual_2_F",
-    "C_Man_casual_3_F",
-    "C_Man_casual_4_F",
-    "C_Man_casual_5_F",
-    "C_Man_casual_6_F",
-    "C_man_polo_1_F",
-    "C_man_polo_2_F",
-    "C_man_polo_3_F",
-    "C_man_polo_4_F",
-    "C_man_polo_5_F",
-    "C_man_polo_6_F"
+    "CFP_C_AFG_Civilian_02",
+    "CFP_C_AFG_Civilian_01"
 ];
 
 // Civilian vehicle classnames.
 civilian_vehicles = [
-    "C_Quadbike_01_F",
-    "C_Hatchback_01_F",
-    "C_Hatchback_01_sport_F",
-    "C_Offroad_01_F",
-    "C_Offroad_01_repair_F",
-    "C_SUV_01_F",
-    "C_Van_01_fuel_F",
-    "C_Van_01_transport_F",
-    "C_Van_01_box_F",
-    "C_Truck_02_fuel_F",
-    "C_Truck_02_transport_F",
-    "C_Truck_02_covered_F",
-    "C_Truck_02_box_F"
+    "CFP_C_AFG_Datsun_Pickup_01",
+    "CFP_C_AFG_Datsun_Pickup_Covered_01",
+    "CFP_C_AFG_Lada_01",
+    "CFP_C_AFG_Skoda_105_L_01",
+    "CFP_C_AFRISLAMIC_Land_Rover_01",
+    "CFP_C_AFRISLAMIC_Skoda_Blue_01",
+    "CFP_C_AFRISLAMIC_Skoda_Green_01",
+    "CFP_C_AFRISLAMIC_Skoda_White_01",
+    "CUP_C_TT650_TK_CIV",
+    "CUP_C_Volha_Gray_TKCIV",
+    "CUP_C_Volha_Blue_TKCIV",
+    "CUP_C_Volha_Limo_TKCIV",
+    "CUP_O_Hilux_unarmed_TK_CIV",
+    "CUP_O_Hilux_unarmed_TK_CIV_Red",
+    "CUP_O_Hilux_unarmed_TK_CIV_Tan",
+    "CUP_O_Hilux_unarmed_TK_CIV_White",
+    "CUP_C_Lada_TK_CIV",
+    "CUP_C_Lada_GreenTK_CIV",
+    "CUP_C_Lada_TK2_CIV"
 ];

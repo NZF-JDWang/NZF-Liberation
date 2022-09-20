@@ -38,12 +38,16 @@ if !(_spawn_marker isEqualTo "") then {
             };
             [selectRandom _infClasses, markerPos _spawn_marker, _grp] call KPLIB_fnc_createManagedUnit;
         };
-        [_grp] spawn battlegroup_ai;
+//        [_grp] spawn battlegroup_ai;
         _bg_groups pushBack _grp;
+        {
+           [_x] spawn battlegroup_ai;
+        } forEach _bg_groups;
+        
     } else {
         private _vehicle_pool = [opfor_battlegroup_vehicles, opfor_battlegroup_vehicles_low_intensity] select (combat_readiness < 50);
 
-        while {count _selected_opfor_battlegroup < _target_size} do {
+        while {count _selected_opfor_battlegroup < (_target_size/2)} do {
             _selected_opfor_battlegroup pushback (selectRandom _vehicle_pool);
         };
 
@@ -74,7 +78,7 @@ if !(_spawn_marker isEqualTo "") then {
 
     sleep 3;
 
-    combat_readiness = (combat_readiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
+    combat_readiness = (combat_readiness - (round ((count _bg_groups) + (random (count _bg_groups))))/2) max 0;
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
 
     {

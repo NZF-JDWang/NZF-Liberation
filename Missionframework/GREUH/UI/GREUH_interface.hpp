@@ -84,7 +84,7 @@
 #define BORDERSIZE      0.01
 
 #define BASE_Y 			0.075
-
+/*
 class RscListBox {
 	idc = -1;
 	type = 5;
@@ -121,7 +121,7 @@ class RscListBox {
 		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 	};
 };
-
+*/
 class RscCombo {
 	idc = -1;
 	type = 4;

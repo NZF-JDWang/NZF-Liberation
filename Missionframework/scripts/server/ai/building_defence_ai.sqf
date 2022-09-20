@@ -1,5 +1,8 @@
 params ["_unit", ["_sector", ""]];
 
+[(group _unit), _sector, 200, [], true, false, -1, false] call lambs_wp_fnc_taskGarrison;
+
+/*
 _unit setUnitPos "UP";
 _unit disableAI "PATH";
 private _move_is_disabled = true;

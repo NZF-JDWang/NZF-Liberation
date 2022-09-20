@@ -40,7 +40,7 @@ if ( !isNil "greuh_options_profile" ) then {
 
 [] call compile preprocessFileLineNumbers "GREUH\GREUH_config.sqf";
 [] call compile preprocessFileLineNumbers "GREUH\scripts\GREUH_version.sqf";
-execVM "GREUH\scripts\GREUH_actionmanager.sqf";
+//execVM "GREUH\scripts\GREUH_actionmanager.sqf";
 if ( GREUH_allow_mapmarkers ) then { execVM "GREUH\scripts\GREUH_playermarkers.sqf"; };
 if ( GREUH_allow_platoonview ) then { execVM "GREUH\scripts\GREUH_platoonoverlay.sqf"; };
 if ( GREUH_allow_platoonview ) then { execVM "GREUH\scripts\GREUH_cache_units.sqf"; };

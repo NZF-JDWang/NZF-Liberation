@@ -94,12 +94,13 @@ static_vehicles = [
 ];
 
 buildings = [
+    ["B_supplyCrate_F",0,50,0],
+    ["nzf_NZBloodbox",50,0,0],
     ["Land_Cargo_House_V4_F",0,0,0],
     ["Land_Cargo_Patrol_V4_F",0,0,0],
     ["Land_Cargo_Tower_V4_F",0,0,0],
-    ["Flag_NATO_F",0,0,0],
-    ["BWA3_Flag_Ger_F",0,0,0],
-    ["Flag_White_F",0,0,0],
+    ["gm_flag_GE",0,0,0],
+    ["nzf_NZFlag",0,0,0],
     ["Land_Medevac_house_V1_F",0,0,0],
     ["Land_Medevac_HQ_V1_F",0,0,0],
     ["Flag_RedCrystal_F",0,0,0],

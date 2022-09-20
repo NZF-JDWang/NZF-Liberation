@@ -22,7 +22,7 @@ params [
 if !(isPlayer _player) exitWith {["No player given"] call BIS_fnc_error; false};
 
 if (isNil "KP_liberation_resources_global") then {KP_liberation_resources_global = false;};
-
+/*
 // Tutorial
 _player addAction [
     ["<t color='#80FF80'>", localize "STR_TUTO_ACTION", "</t>"] joinString "",
@@ -58,7 +58,7 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+*/
 // Redeploy
 _player addAction [
     ["<t color='#80FF80'>", localize "STR_DEPLOY_ACTION", "</t><img size='2' image='res\ui_redeploy.paa'/>"] joinString "",
@@ -97,7 +97,7 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+/*
 // Arsenal
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_ARSENAL_ACTION", "</t><img size='2' image='res\ui_arsenal.paa'/>"] joinString "",
@@ -119,7 +119,7 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+*/
 // Build
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_BUILD_ACTION", "</t><img size='2' image='res\ui_build.paa'/>"] joinString "",

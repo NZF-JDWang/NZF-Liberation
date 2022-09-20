@@ -25,3 +25,5 @@ while {GRLIB_csat_aggressivity > 0.9 && GRLIB_endgame == 0} do {
         ["", (random 100) < 45] spawn spawn_battlegroup;
     };
 };
+
+

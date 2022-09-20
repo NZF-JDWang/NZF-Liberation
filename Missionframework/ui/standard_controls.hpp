@@ -330,6 +330,7 @@ class kndr_MapControl {
         coefMax = 1.00;
     };
 };
+/*
 class RscText {
         type = CT_STATIC;
         idc = -1;
@@ -339,6 +340,7 @@ class RscText {
         font = "Bitstream";
         sizeEx = 0.04;
 };
+*/
 class StdText {
     idc = -1;
     type =  CT_STATIC;

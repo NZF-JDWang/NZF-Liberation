@@ -1,4 +1,5 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
+/*
 switch (KP_liberation_arsenal) do {
     case  1: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\custom.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\rhsusaf.sqf";};
@@ -18,7 +19,7 @@ switch (KP_liberation_arsenal) do {
     case  16: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\vanilla_ldf.sqf";};
     default  {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
-
+*/
 if (typeOf player == "VirtualSpectator_F") exitWith {
     execVM "scripts\client\markers\empty_vehicles_marker.sqf";
     execVM "scripts\client\markers\fob_markers.sqf";
@@ -28,6 +29,7 @@ if (typeOf player == "VirtualSpectator_F") exitWith {
     execVM "scripts\client\markers\spot_timer.sqf";
     execVM "scripts\client\misc\synchronise_vars.sqf";
     execVM "scripts\client\ui\ui_manager.sqf";
+    execVM "scripts\bloodPatch.sqf";
 };
 
 // This causes the script error with not defined variable _display in File A3\functions_f_bootcamp\Inventory\fn_arsenal.sqf [BIS_fnc_arsenal], line 2122
@@ -54,7 +56,7 @@ if (KP_liberation_mapmarkers) then {execVM "scripts\client\markers\huron_marker.
 execVM "scripts\client\markers\sector_manager.sqf";
 execVM "scripts\client\markers\spot_timer.sqf";
 execVM "scripts\client\misc\broadcast_squad_colors.sqf";
-execVM "scripts\client\misc\init_arsenal.sqf";
+//execVM "scripts\client\misc\init_arsenal.sqf";
 execVM "scripts\client\misc\permissions_warning.sqf";
 if (!KP_liberation_ace) then {execVM "scripts\client\misc\resupply_manager.sqf";};
 execVM "scripts\client\misc\secondary_jip.sqf";
@@ -104,3 +106,78 @@ if (player isEqualTo ([] call KPLIB_fnc_getCommander)) then {
         };
     };
 };
+//*****************************************************************************************************
+player addEventHandler ["Killed", {
+    params ["_unit"];
+    Mission_loadout = getUnitLoadout player;
+    Team_ID = assignedTeam player;
+}];
+
+player addEventHandler ["Respawn", {
+    params ["_unit"];
+
+    if (!isNil "Mission_loadout") then {
+        player setUnitLoadout Mission_loadout;
+        player assignTeam Team_ID;
+    };
+}];
+//*****************************************************************************************************
+/*
+	Faction: initPlayerLocal.sqf
+	Author: Dom
+	Requires: Start us up
+*/
+
+DT_isACEEnabled = isClass (configFile >> "CfgPatches" >> "ace_common");
+//DT_arsenalBoxes = [arsenal_1];
+
+//***************************************************************************************
+
+player addEventHandler ["Respawn",DT_fnc_onRespawn];
+
+if (DT_isACEEnabled) then {
+	private _groupCategory = [
+		"groupCategory",
+		"Group Menu",
+		"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\meet_ca.paa",
+		{[] call DT_fnc_initGroupMenu},
+		{
+			isNull objectParent player && {((player getVariable ["KPLIB_fobDist", 9999999]) < 50) || (player distance nzf_flag < 50)}
+		}
+	] call ace_interact_menu_fnc_createAction;
+	[player,1,["ACE_SelfActions"],_groupCategory] call ace_interact_menu_fnc_addActionToObject;
+
+	private _arsenalCategory = [
+		"arsenalCategory",
+		"Arsenal",
+		"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\armor_ca.paa",
+		{			
+			[player,player,false] call ace_arsenal_fnc_openBox},
+		{
+			isNull objectParent player &&
+			{player getVariable ["ace_arsenal_virtualItems",[]] isNotEqualTo [] && 
+			{((player getVariable ["KPLIB_fobDist", 9999999]) < 50) || (player distance nzf_flag < 50)}}
+		}
+	] call ace_interact_menu_fnc_createAction;
+	[player,1,["ACE_SelfActions"],_arsenalCategory] call ace_interact_menu_fnc_addActionToObject;
+
+	["ace_arsenal_displayClosed",{
+		DT_savedLoadout = getUnitLoadout player;
+	}] call CBA_fnc_addEventHandler;
+} else {
+	{
+		_x addAction ["Open Group Menu",DT_fnc_initGroupMenu];
+	} forEach DT_arsenalBoxes;
+
+	[missionNamespace,"arsenalClosed",{
+		DT_savedLoadout = getUnitLoadout player;
+	}] call BIS_fnc_addScriptedEventHandler;
+};
+
+
+
+
+
+
+
+

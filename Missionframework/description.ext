@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 34;
+    maxPlayers = 25;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "KP Liberation Dev Team | Edited by JD Wang";
 
 
 /*
@@ -37,10 +37,10 @@ briefingName = $STR_MISSION_TITLE;
 
 // Path to image which will be displayed when the mission is highlighted on the mission selection screen.
 // Image should be .paa format and in 2:1 aspect ratio – ideally 1024x512 (Arma 3).
-overviewPicture = "res\lib.paa";
+overviewPicture = "res\mainTitleShot.jpg";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "www.killahpotatoes.de";
+overviewText = "www.NZFGaming.com";
 
 
 /*
@@ -53,10 +53,10 @@ onLoadName = $STR_MISSION_TITLE;
 
 // You can define a picture to be shown while the mission is loaded.
 // The path is relative to the mission folder.
-loadScreen = "res\lib.paa";
+loadScreen = "res\mainTitleShot.jpg";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "www.NZFGaming.com";
 
 
 /*
@@ -153,7 +153,7 @@ allowFunctionsRecompile = "[0, 1] select (is3DENMultiplayer || is3DEN)";
 // Disable specific channels for voice and text communication.
 // MOTD and admin say have exception and will show in global.
 // 0 Global, 1 Side, 2 Command, 3 Group, 4 Vehicle, 5 Direct, 6 System
-disableChannels[] = {0};
+disableChannels[] = {0,2,4,5};
 
 // Multiplayer setting that removes all playable units which do not have a human player.
 // When AI is disabled, a player logging out will not have AI take control of his character.
@@ -181,7 +181,7 @@ joinUnassigned = 1;
 // When enabled, joining player will join the mission bypassing role selection screen.
 // The joinUnassigned param will be set to 1 automatically, so that player receives 1st available role from mission template.
 // When leaving such mission, player will go straight back to server browser.
-skipLobby = 0;
+skipLobby = 1;
 
 // Defines if the map is shown after the mission starts.
 showMap = 1;
@@ -212,6 +212,9 @@ taskManagement_drawDist = 5000;
     ----- Config Includes -----
 */
 
+#include "GUI\masterHandler.hpp"
+#include "Config\Config_Groups.hpp"
+
 class CfgDebriefing {
     #include "KPLIB_debriefs.hpp"
 };
@@ -230,6 +233,7 @@ class CfgDiscordRichPresence {
 class CfgFunctions {
     #include "CfgFunctions.hpp"
     #include "KP\KPPLM\KPPLM_functions.hpp"
+    #include "Functions.hpp"
 };
 
 class CfgRespawnTemplates {
@@ -248,3 +252,17 @@ class CfgTaskDescriptions {
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
 
+class Extended_InitPost_EventHandlers {
+
+	//class B_supplyCrate_F {
+	//        
+    //   init = "_this execVM 'scripts\arsenal.sqf';";
+	//};
+
+    class Box_NATO_WpsLaunch_F {
+        
+        init = "_this execVM 'scripts\launcherBox.sqf';";
+    };
+
+
+};

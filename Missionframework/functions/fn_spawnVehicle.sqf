@@ -54,12 +54,13 @@ if (_spawnPos isEqualTo zeroPos) exitWith {
 // If it's a chopper, spawn it flying
 if (_classname in opfor_choppers) then {
     _newvehicle = createVehicle [_classname, _spawnpos, [], 0, 'FLY'];
+    _newvehicle setVehicleLock "LOCKEDPLAYER";
     _newvehicle flyInHeight (80 + (random 120));
     _newvehicle allowDamage false;
 } else {
     _newvehicle = _classname createVehicle _spawnpos;
     _newvehicle allowDamage false;
-
+    _newvehicle setVehicleLock "LOCKEDPLAYER";
     [_newvehicle] call KPLIB_fnc_allowCrewInImmobile;
 
     // Randomize direction and reset position and vector

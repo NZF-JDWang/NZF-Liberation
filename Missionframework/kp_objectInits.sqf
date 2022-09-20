@@ -23,11 +23,17 @@
         ];
 */
 
+
 KPLIB_objectInits = [
     // Set KP logo on white flag
     [
         ["Flag_White_F"],
         {_this setFlagTexture "res\flag_kp_co.paa";}
+    ],
+
+    [
+        ["CUP_O_TK_Officer"],
+        {_this addBackpack "B_RadioBag_01_eaf_F";}
     ],
 
     // Add helipads to zeus, as they can't be recycled after built
@@ -75,6 +81,7 @@ KPLIB_objectInits = [
                 params ["_arsenal"];
                 waitUntil {sleep 0.1; time > 0};
                 [_arsenal] remoteExecCall ["KPLIB_fnc_setLoadableViV", 0, _arsenal];
+                if (KP_liberation_ace) then {[_arsenal, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable"];};
             };
         }
     ],
