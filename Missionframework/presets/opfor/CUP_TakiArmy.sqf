@@ -73,6 +73,7 @@ militia_vehicles = [
     "CUP_O_Hilux_armored_BTR60_TK_INS",                                 // Hilux Armored (BTR-60)
     "CUP_O_Hilux_armored_zu23_TK_INS",                                  // Hilux Armored (ZU-23-2)
     "CFP_O_TBAN_BTR_40_DShKM_01",                                               // BTR-40 (DSHKM)
+    "CFP_O_TBAN_BTR_40_DShKM_01",                                               // BTR-40 (DSHKM)
     "CFP_O_TBAN_Technical_PK_01",                                                  // Land Rover 110 (M2)
     "CFP_O_TBAN_Hilux_DShKM_01",                                                  // Land Rover 110 (M2)
     "CFP_O_TBAN_Hilux_DShKM_01",                                         // Hilux (DShKM)
@@ -89,7 +90,13 @@ opfor_vehicles = [
     "CUP_O_UAZ_MG_TKA",                                                 // UAZ (DShKM)
     "CUP_O_UAZ_AGS30_TKA",                                              // UAZ (AGS-30)
     "CUP_O_UAZ_SPG9_TKA",                                               // UAZ (SPG-9)
+    "CUP_O_UAZ_MG_TKA",                                                 // UAZ (DShKM)
+    "CUP_O_UAZ_AGS30_TKA",                                              // UAZ (AGS-30)
+    "CUP_O_UAZ_SPG9_TKA",                                               // UAZ (SPG-9)
     "CUP_O_LR_AA_TKA",                                                  // Land Rover 110 (AA)
+    "CUP_O_BTR40_MG_TKA",
+    "CUP_O_BTR40_MG_TKA",
+    "CUP_O_BTR40_MG_TKA",
     "CUP_O_BTR80_TK",                                                   // BTR-80
     "CUP_O_BTR80A_TK",                                                  // BTR-80A
     "CUP_O_BMP1P_TKA",                                                  // BMP-1P
@@ -100,7 +107,6 @@ opfor_vehicles = [
     "CUP_O_ZSU23_TK",                                                   // ZSU-23-4
     "CUP_O_BMP2_ZU_TKA",                                                // BMP-2 ZU-23
     "CUP_O_T55_TK",                                                     // T-55
-    "CUP_O_T72_TKA",                                                    // T-72
     "CUP_O_T72_TKA"                                                     // T-72
 ];
 
@@ -117,6 +123,8 @@ opfor_vehicles_low_intensity = [
     "CUP_O_BRDM2_TKA",                                                  // BRDM-2
     "CUP_O_BRDM2_TKA",                                                  // BRDM-2
     "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
     "CUP_O_BMP1_TKA",                                                   // BMP-1
     "CUP_O_BMP1P_TKA",                                                  // BMP-1P
     "CUP_O_M113_TKA"                                                    // M113A3
@@ -128,6 +136,9 @@ opfor_battlegroup_vehicles = [
     "CUP_O_UAZ_AGS30_TKA",                                              // UAZ (AGS-30)
     "CUP_O_UAZ_AGS30_TKA",                                              // UAZ (AGS-30)
     "CUP_O_UAZ_SPG9_TKA",                                               // UAZ (SPG-9)
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
     "CUP_O_LR_AA_TKA",                                                  // Land Rover 110 (AA)
     "CUP_O_BTR60_TK",                                                   // BTR-60PB
     "CUP_O_BTR80_TK",                                                   // BTR-80
@@ -156,6 +167,7 @@ opfor_battlegroup_vehicles_low_intensity = [
     "CUP_O_BTR60_TK",                                                   // BTR-60PB
     "CUP_O_M113_TKA",                                                   // M113A3
     "CUP_O_M113_TKA",                                                   // M113A3
+    "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
     "CUP_O_BTR40_MG_TKA",                                               // BTR-40 (DSHKM)
     "CUP_O_BRDM2_TKA",                                                  // BRDM-2
     "CUP_O_BMP1_TKA",                                                   // BMP-1

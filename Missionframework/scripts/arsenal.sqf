@@ -155,7 +155,16 @@ _vests = [
 	"USP_VEST_PLATEFRAME_LOAD_MC",
 	"USP_VEST_PLATEFRAME_LOAD_TAN",
 	"USP_VEST_PLATEFRAME_LOAD2_MC",
-	"USP_VEST_PLATEFRAME_LOAD2_TAN"
+	"USP_VEST_PLATEFRAME_LOAD2_TAN",
+	"ArsA18_mc_1",
+	"ArsCPC_mc_1",
+	"CondorEXO_mc_1",
+	"crye_avs_mc_1",
+	"crye_avs_cb_1",
+	"Fortgladiator_mc_1",
+	"lv119_cbr_1",
+	"tv110_mc_1",
+	"was_dcs_mc_1"
 ];
 
 _leaderVests = [
@@ -227,6 +236,9 @@ _leaderBackpacks = [
 ];
 
 _largerBackpacks = [
+	"pmc_lbt1476_cb",
+	"pmc_MysteryASAP_mc",
+	"pmc_MysteryCL_mc",
 	"B_Kitbag_cbr",
 	"B_Kitbag_mcamo",
 	"B_Kitbag_rgr",
@@ -346,7 +358,15 @@ _headgear = [
 	"USP_OPSCORE_FASTMT_FCV_CSW",
 	"USP_OPS_FASTXP_CT_FG",
 	"USP_OPS_FASTXP_CT_TAN",
-	"mgsr_headbag"
+	"USP_OPSCORE_FASTMTC_CM",
+	"USP_OPSCORE_FASTMTC_CMG",
+	"USP_OPSCORE_FASTMTC_CMGS",
+	"USP_OPSCORE_FASTMTC_CMGT",
+	"USP_OPSCORE_FASTMTC_CMS",
+	"USP_OPSCORE_FASTMTC_CMT",
+	"USP_OPSCORE_FASTMTC_CG",
+	"USP_OPSCORE_FASTMTC_CS",
+	"USP_OPSCORE_FASTMTC_CGT"
 ];
 
 _facewear = [
@@ -575,14 +595,7 @@ _ammo = [
 	"Laserbatteries",
 	"ACRE_VHF30108SPIKE",
 	"ACRE_VHF30108MAST",
-	"ACE_MRE_ChickenTikkaMasala",
-	"ACE_MRE_ChickenHerbDumplings",
-	"ACE_MRE_CreamChickenSoup",
-	"ACE_MRE_CreamTomatoSoup",
-	"ACE_MRE_LambCurry",
-	"ACE_MRE_MeatballsPasta",
-	"ACE_MRE_SteakVegetables",
-	"ACE_Canteen_Empty"
+	"nzf_headbag_inventory"
 
 ];
 
@@ -830,6 +843,11 @@ _rifles = [
 ];
 
 _optics = [
+	"skeetir_tws_pip",
+	"eotech_exps3_skeetir_down",
+	"elcan_specterdr_skeetir_down",
+	"aimpoint_t2_skeetir_down",
+	"eotech_exps3_g33_down_skeetir_down",
 	"cup_optic_ac11704_black",
 	"cup_optic_ac11704_coyote",
 	"rhsusf_acc_acog",

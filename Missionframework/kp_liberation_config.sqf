@@ -122,7 +122,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 2;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -146,7 +146,7 @@ KP_liberation_preset_blufor = 0;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 14;
+KP_liberation_preset_opfor = 2;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -158,7 +158,7 @@ KP_liberation_preset_opfor = 14;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 7;
+KP_liberation_preset_resistance = 2;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -169,7 +169,7 @@ KP_liberation_preset_resistance = 7;
 5  = Unsung
 6  = CUP Takistani Civilians
 7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+KP_liberation_preset_civilians = 1;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -222,7 +222,7 @@ GRLIB_secondary_objective_impact = 0.6;                                 // The p
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
-GRLIB_sector_size = 1000;                                               // Range to activate a sector.
+GRLIB_sector_size = 1500;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
 GRLIB_defended_buildingpos_part = 0.2;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 8;                                             // Size of enemy battlegroups.
@@ -236,9 +236,9 @@ GRLIB_cleanup_delay = 1200;                                             // Time 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
 GRLIB_sector_cap = 180;                                                 // Cap for sector defenders.
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
-GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
+GRLIB_patrol_cap = 100;                                                 // Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_kill_penalty = 10;                                      // Civil Reputation penalty for killing a civilian.
 KP_liberation_cr_building_penalty = 5;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.

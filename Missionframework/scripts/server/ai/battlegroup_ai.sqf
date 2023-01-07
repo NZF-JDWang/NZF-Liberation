@@ -13,6 +13,7 @@ private _objPos = [getPos (leader _grp)] call KPLIB_fnc_getNearestBluforObjectiv
 
 private _startpos = getPos (leader _grp);
 
+(leader _grp) setVariable ["lambs_danger_dangerRadio", true];
 _grp setVariable ["lambs_danger_enableGroupReinforce", true, true];
 
 private _waypoint = [];

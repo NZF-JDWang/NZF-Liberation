@@ -33,6 +33,7 @@ class helipilot {
 		"USP_CRYE_CPC",
 		"USP_CRYE_CPC_MCB",
 		"USP_CRYE_CPC_RGR",
+		"rhsusf_ihadss",
 		"rhsusf_hgu56p_visor_black",
 		"rhsusf_hgu56p_visor_mask_black",
 		"rhsusf_hgu56p_visor_mask_Empire_black",

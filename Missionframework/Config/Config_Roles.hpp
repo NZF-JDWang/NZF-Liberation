@@ -27,6 +27,7 @@ class Common_Arsenal {
 	};
 	magazines[] = {
 	//Ammo 
+	"ACE_HuntIR_M203",
 	"ACE_7Rnd_408_305gr_Mag",
 	"Tier1_20Rnd_762x51_M118_Special_SR25_Mag",
 	"rhs_mag_20Rnd_SCAR_762x51_m118_special",
@@ -44,6 +45,8 @@ class Common_Arsenal {
 	"UK3CB_BAF_762_100Rnd_T",
 	"UK3CB_BAF_762_200Rnd",
 	"UK3CB_BAF_762_200Rnd_T",
+	"Tier1_100Rnd_762x51_Belt_M62_Tracer",
+	"Tier1_250Rnd_762x51_Belt_M62_Tracer",
 //Throwables
 	"ACE_Chemlight_HiBlue",
 	"ACE_Chemlight_HiGreen",
@@ -105,6 +108,11 @@ class Common_Arsenal {
 };
 items[] = {
 //Optics
+	"skeetir_tws_pip",
+	"eotech_exps3_skeetir_down",
+	"elcan_specterdr_skeetir_down",
+	"aimpoint_t2_skeetir_down",
+	"eotech_exps3_g33_down_skeetir_down",
 	"cup_optic_ac11704_black",
 	"cup_optic_ac11704_coyote",
 	"rhsusf_acc_acog",
@@ -675,6 +683,7 @@ items[] = {
 	"USP_PVS31_HIGH",
 	"USP_PVS31_LOW",
 	//ACE Items
+	"ACE_HuntIR_monitor",
 	"rhsusf_m112_mag",
 	"rhsusf_m112x4_mag",
 	"APERSMineDispenser_Mag",
@@ -712,9 +721,12 @@ items[] = {
 	"nzf_FAK",
 	"kat_Pulseoximeter",
 	"MS_Strobe_Mag_1",
-	"MS_Strobe_Mag_2"
+	"MS_Strobe_Mag_2",
+	"nzf_headbag_inventory"
 	};
 	backpacks[] = {
-
+	"pmc_MysteryASAP_mc",
+	"pmc_MysteryCL_mc",
+	"pmc_lbt1476_cb"
 	};
 };

@@ -207,7 +207,7 @@ taskManagement_propagate = 1;
 // Within this range, unassigned tasks are drawn on screen.
 taskManagement_drawDist = 5000;
 
-
+allowProfileGlasses = 0;
 /*
     ----- Config Includes -----
 */

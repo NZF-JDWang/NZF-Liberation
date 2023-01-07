@@ -184,8 +184,8 @@ while { true } do {
                     };
                 } foreach _near_objects_25;
 
-                _near_objects = _near_objects - _remove_objects;
-                _near_objects_25 = _near_objects_25 - _remove_objects_25;
+                _near_objects = [];
+                _near_objects_25 = [];
 
                 if ( count _near_objects == 0 ) then {
                     {
