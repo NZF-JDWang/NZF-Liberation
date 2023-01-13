@@ -6,7 +6,7 @@ params [
 
 if (GRLIB_endgame == 1) exitWith {};
 
-_spawn_marker = [[1000, 1500] select _infOnly, 2000, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
+_spawn_marker = [[2000, 1000] select _infOnly, 3000, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 
 if !(_spawn_marker isEqualTo "") then {
     GRLIB_last_battlegroup_time = diag_tickTime;

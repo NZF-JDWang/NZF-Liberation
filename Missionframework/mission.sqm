@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1015;
+		nextID=1024;
 	};
 	class Camera
 	{
-		pos[]={20850.584,430.43628,5957.2788};
-		dir[]={-0.69035155,-0.3683556,0.62267882};
-		up[]={-0.27352801,0.92968494,0.24671499};
-		aside[]={0.66977394,1.4901161e-008,0.74256498};
+		pos[]={27405.098,69.24128,5272.2231};
+		dir[]={0.41673088,-0.42858419,0.80169684};
+		up[]={0.19768399,0.90348023,0.38030154};
+		aside[]={0.8873198,8.4613566e-007,-0.4612368};
 	};
 };
 binarizationWanted=0;
-sourceName="NZF_Liberation_Dev";
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
