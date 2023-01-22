@@ -148,3 +148,5 @@ DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setu
 [DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",-2,"DT_DG_JIP"];
 
 addMissionEventHandler ["HandleDisconnect",{_this call DT_fnc_handleDisconnect}];
+
+["Initialize", [true]] call BIS_fnc_dynamicGroups;

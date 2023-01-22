@@ -7,6 +7,7 @@ class KPLIB {
         class addObjectInit             {};
         class addRopeAttachEh           {};
         class allowCrewInImmobile       {};
+        class bloodpatch                {};
         class checkClass                {};
         class checkCrateValue           {};
         class checkGear                 {};

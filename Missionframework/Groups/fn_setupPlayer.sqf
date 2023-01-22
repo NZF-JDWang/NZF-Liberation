@@ -88,6 +88,6 @@ if (headgear player == "") then {
 	player addHeadgear _beret;
 
 };
+ player spawn KPLIB_fnc_bloodpatch;
 
-[player] execVM "scripts\bloodpatch.sqf"; 
 };

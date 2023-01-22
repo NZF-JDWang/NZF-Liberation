@@ -62,3 +62,15 @@ if (isServer) then {
     KPLIB_initServer = true;
     publicVariable "KPLIB_initServer";
 };
+
+["Car_f", "InitPost", {
+   [(_this # 0),5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["Helicopter", "InitPost", {
+   [(_this # 0),5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhs_vmf_recon_rifleman", "InitPost", {
+   (_this # 0) execVM "scripts\paratrooperGear.sqf";
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;

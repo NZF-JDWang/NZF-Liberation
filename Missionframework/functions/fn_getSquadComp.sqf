@@ -24,7 +24,7 @@ private _squadcomp = [];
 if (_type == "army") then {
     private _selected = false;
     private _randomchance = 0;
-    _squadcomp = selectRandom [KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadInf, KPLIB_o_squadTank, KPLIB_o_squadAir];
+    _squadcomp = selectRandom [KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadInf, KPLIB_o_squadHMG, KPLIB_o_squadMortar, KPLIB_o_squadTank, KPLIB_o_squadAir];
 
     if (armor_weight > 40 && !_selected) then {
         _randomchance = (armor_weight - 35) * 1.4;
@@ -46,7 +46,7 @@ if (_type == "army") then {
         _randomchance = (infantry_weight - 35) * 1.4;
         if ((random 100) < _randomchance) then {
             _selected = true;
-            _squadcomp = selectRandom [KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadInf, KPLIB_o_squadInf, KPLIB_o_squadInf, KPLIB_o_squadTank, KPLIB_o_squadAir, KPLIB_o_squadHvyMG, KPLIB_o_squadMortar, KPLIB_o_squadSPG];
+            _squadcomp = selectRandom [KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadStd, KPLIB_o_squadInf, KPLIB_o_squadInf, KPLIB_o_squadInf, KPLIB_o_squadTank, KPLIB_o_squadAir, KPLIB_o_squadHMG, KPLIB_o_squadMortar];
         };
     };
 } else {

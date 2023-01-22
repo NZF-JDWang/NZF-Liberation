@@ -1,16 +1,28 @@
 params ["_unit", ["_sector", ""]];
 
-[(group _unit), _sector, 200, [], true, false, -1, false] call lambs_wp_fnc_taskGarrison;
+[(group _unit), _sector, 400, [], true, false, -1, false] call lambs_wp_fnc_taskGarrison;
+
+
+private _ratio = 0.2;
+
+
+while { local _unit && alive _unit && !(captive _unit)} do {
+
+    _ratio = [_sector] call KPLIB_fnc_getBluforRatio;
+    
+
+    if (_ratio > .5) then {
+
+        [(group _unit)] call lambs_wp_fnc_taskReset;
+        [(group _unit), _sector, 150, [], false, false, -2, true] call lambs_wp_fnc_taskGarrison;
+    };
+    sleep 120;
+};
 
 /*
-_unit setUnitPos "UP";
-_unit disableAI "PATH";
-private _move_is_disabled = true;
-private _hostiles = 0;
-private _ratio = 0.4;
-private _range = 40;
 
-while {_move_is_disabled && local _unit && alive _unit && !(captive _unit)} do {
+
+while { local _unit && alive _unit && !(captive _unit)} do {
 
     if !(_sector isEqualTo "") then {
         _ratio = [_sector] call KPLIB_fnc_getBluforRatio;

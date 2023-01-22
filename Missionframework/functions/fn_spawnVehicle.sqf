@@ -40,7 +40,10 @@ if (_precise) then {
     private _i = 0;
     while {_spawnPos isEqualTo []} do {
         _i = _i + 1;
-        _spawnpos = (_pos getPos [random 150, random 360]) findEmptyPosition [10, 100, _classname];
+ //       _spawnpos = (_pos getPos [random 150, random 360]) findEmptyPosition [10, 100, _classname];
+
+    _spawnpos = [_pos, 10, 200, 10] call BIS_fnc_findSafePos;
+
         if (_i isEqualTo 10) exitWith {};
     };
 };
@@ -67,6 +70,7 @@ if (_classname in opfor_choppers) then {
     if (_rndDir) then {
         _newvehicle setDir (random 360);
     };
+    sleep 0.2;
     _newvehicle setPos _spawnpos;
     _newvehicle setVectorUp surfaceNormal position _newvehicle;
 };

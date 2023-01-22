@@ -32,9 +32,27 @@ KPLIB_objectInits = [
     ],
 
     [
-        ["CUP_O_TK_Officer"],
+        ["rhs_msv_emr_sergeant"],
         {_this addBackpack "B_RadioBag_01_eaf_F";}
     ],
+
+    [
+        ["rhs_vdv_rifleman"],
+        {_this addBackpack "RHS_DShkM_Gun_Bag";}
+    ],
+    [
+        ["rhs_vdv_rifleman_alt"],
+        {_this addBackpack "RHS_DShkM_TripodLow_Bag";}
+    ],
+    [
+        ["rhs_vdv_recon_rifleman"],
+        {_this addBackpack "RHS_Podnos_Gun_Bag";}
+    ],
+    [
+        ["rhs_vdv_recon_rifleman_l"],
+        {_this addBackpack "RHS_Podnos_Bipod_Bag";}
+    ],
+    
 
     // Add helipads to zeus, as they can't be recycled after built
     [
@@ -132,7 +150,7 @@ KPLIB_objectInits = [
             if (!(GRLIB_autodanger) && {(side _this) isEqualTo GRLIB_side_friendly}) then {
                 _this disableAI "AUTOCOMBAT";
             };
-            _this allowFleeing 0;
+            //_this allowFleeing 0;
         },
         true
     ]

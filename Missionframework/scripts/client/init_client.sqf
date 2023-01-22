@@ -29,8 +29,8 @@ if (typeOf player == "VirtualSpectator_F") exitWith {
     execVM "scripts\client\markers\spot_timer.sqf";
     execVM "scripts\client\misc\synchronise_vars.sqf";
     execVM "scripts\client\ui\ui_manager.sqf";
-    execVM "scripts\bloodPatch.sqf";
 };
+
 
 // This causes the script error with not defined variable _display in File A3\functions_f_bootcamp\Inventory\fn_arsenal.sqf [BIS_fnc_arsenal], line 2122
 // ["Preload"] call BIS_fnc_arsenal;
@@ -119,6 +119,7 @@ player addEventHandler ["Respawn", {
     if (!isNil "Mission_loadout") then {
         player setUnitLoadout Mission_loadout;
         player assignTeam Team_ID;
+        player spawn NZF_fnc_bloodpatch;
     };
 }];
 //*****************************************************************************************************
@@ -163,7 +164,7 @@ if (DT_isACEEnabled) then {
 
 	["ace_arsenal_displayClosed",{
 		DT_savedLoadout = getUnitLoadout player;
-	}] call CBA_fnc_addEventHandler;
+       	}] call CBA_fnc_addEventHandler;
 } else {
 	{
 		_x addAction ["Open Group Menu",DT_fnc_initGroupMenu];
@@ -174,9 +175,9 @@ if (DT_isACEEnabled) then {
 	}] call BIS_fnc_addScriptedEventHandler;
 };
 
+["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups; 
 
-
-
+player spawn KPLIB_fnc_bloodpatch;
 
 
 

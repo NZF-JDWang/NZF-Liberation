@@ -37,7 +37,7 @@ if (hasInterface) then {
     // Add event handler
     player addEventHandler ["GetInMan", {[] call KPPLM_fnc_getInOut}];
     player addEventHandler ["GetOutMan", {[] call KPPLM_fnc_getInOut}];
-
+/*
     // Action to open the dialog
     private _actionArray = [
         "<t color='#FF8000'>" + localize "STR_KPPLM_ACTIONOPEN" + "</t>",
@@ -50,7 +50,7 @@ if (hasInterface) then {
         '_target isEqualTo _originalTarget'
     ];
     [_actionArray] call CBA_fnc_addPlayerAction;
-
+*/
     // Apply default/loaded values
     [] call KPPLM_fnc_apply;
 };

@@ -21,6 +21,7 @@ if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == GRLIB_side_e
         _unit unassignItem "NVGoggles_INDEP";
         _unit removeItem "NVGoggles_INDEP";
         _unit setUnitPos "UP";
+        [_unit] call ace_medical_treatment_fnc_fullHealLocal;
         sleep 1;
         private _grp = createGroup [GRLIB_side_civilian, true];
         [_unit] joinSilent _grp;
@@ -32,6 +33,7 @@ if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == GRLIB_side_e
             _unit playmove "AmovPercMstpSnonWnonDnon_AmovPercMstpSsurWnonDnon";
             sleep 2;
             _unit setCaptive true;
+            [_unit] call ace_medical_treatment_fnc_fullHealLocal;
         };
         waitUntil {sleep 1;
             !alive _unit || side group _unit == GRLIB_side_friendly

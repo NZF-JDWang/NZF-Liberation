@@ -16,7 +16,7 @@ class pilot {
 	icon = "a3\ui_f\data\map\vehicleicons\iconManOfficer_ca.paa";
 
 	defaultLoadout[] = {
-		{},{},{"Tier1_Glock22","","","",{"Tier1_15Rnd_40SW_JHP",15},{},""},{"FIR_Fighter_Pilot_Nomex5",{{"ACE_EarPlugs",1},{"ACE_Flashlight_MX991",1},{"ACE_IR_Strobe_Item",1},{"Tier1_15Rnd_40SW_JHP",3,15},{"ACE_HandFlare_Green",2,1},{"MS_Strobe_Mag_2",2,1}}},{"FIR_pilot_vest",{{"nzf_fak",1},{"ItemAndroid",1},{"ACE_MapTools",1},{"ACE_microDAGR",1},{"USP_GPNVG18",1},{"ACRE_PRC152",1},{"rhs_mag_m18_green",2,1}}},{"ACE_NonSteerableParachute",{}},"FIR_hgu26p","",{"rhsusf_bino_m24_ARD","","","",{},{},""},{"ItemMap","","ItemRadioAcreFlagged","ItemCompass","ATM_ALTIMETER",""}
+		{},{},{"UK3CB_BAF_L131A1","","","",{"UK3CB_BAF_9_17Rnd",17},{},""},{"FIR_Fighter_Pilot_Nomex5",{{"ACE_EarPlugs",1},{"ACE_Flashlight_MX991",1},{"ACE_IR_Strobe_Item",1},{"Tier1_15Rnd_40SW_JHP",3,15},{"ACE_HandFlare_Green",2,1},{"MS_Strobe_Mag_2",2,1}}},{"FIR_pilot_vest",{{"nzf_fak",1},{"ItemAndroid",1},{"ACE_MapTools",1},{"ACE_microDAGR",1},{"UK3CB_BAF_HMNVS",1},{"ACRE_PRC152",1},{"rhs_mag_m18_green",2,1}}},{"ACE_NonSteerableParachute",{}},"FIR_hgu26p","",{"rhsusf_bino_m24_ARD","","","",{},{},""},{"ItemMap","","","ItemCompass","ATM_ALTIMETER",""}
 		};
 
 	arsenalWeapons[] = {

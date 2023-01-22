@@ -16,4 +16,3 @@ _unit addEventHandler ["Respawn", {
 }];
 [] call KPLIB_fnc_addActionsPlayer;
 
-_unit execVM "scripts\bloodPatch.sqf";

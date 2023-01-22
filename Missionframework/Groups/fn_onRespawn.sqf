@@ -24,5 +24,6 @@ private _oldTeam = assignedTeam _unit;
 } forEach DT_dynamicGroups;
 
 if (_oldPath isEqualTo []) exitWith {[] call DT_fnc_initGroupMenu};
+player spawn KPLIB_fnc_bloodpatch;
 
 [_unit,_oldPath,_oldRole,true,_oldTeam] remoteExecCall ["DT_fnc_assignPlayer",2];

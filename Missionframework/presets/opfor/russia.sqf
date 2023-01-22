@@ -14,7 +14,7 @@ opfor_sentry = "rhs_msv_emr_rifleman";                                  // Rifle
 opfor_rifleman = "rhs_msv_emr_rifleman";                                // Rifleman
 opfor_rpg = "rhs_msv_emr_LAT";                                          // Rifleman (LAT)
 opfor_grenadier = "rhs_msv_emr_grenadier_rpg";                              // Grenadier
-opfor_machinegunner = "rhs_msv_emr_arifleman_rpk";                          // Autorifleman
+opfor_machinegunner = "rhs_msv_emr_arifleman";                          // Autorifleman
 opfor_heavygunner = "rhs_msv_emr_machinegunner";                        // Heavy Gunner
 opfor_marksman = "rhs_msv_emr_marksman";                                // Marksman
 opfor_sharpshooter = "rhs_msv_emr_marksman";                            // Sharpshooter
@@ -23,11 +23,7 @@ opfor_at = "rhs_msv_emr_at";                                            // AT Sp
 opfor_aa = "rhs_msv_emr_aa";                                            // AA Specialist
 opfor_medic = "rhs_msv_emr_medic";                                      // Combat Life Saver
 opfor_engineer = "rhs_msv_emr_engineer";                                // Engineer
-opfor_paratrooper = "rhs_vmf_recon_rifleman";                           // Paratrooper
-opfor_hmg_gunner = "rhs_vdv_rifleman";
-opfor_hmg_support = "rhs_vdv_rifleman_alt";
-opfor_mortar_gunner = "rhs_vdv_recon_rifleman";
-opfor_mortar_support = "rhs_vdv_recon_rifleman_l";
+opfor_paratrooper = "rhs_vmf_recon_rifleman";                                // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "rhs_tigr_msv";                                            // GAZ-233011
@@ -55,9 +51,7 @@ militia_squad = [
     "UK3CB_NAP_O_RIF_1",                                             // Marksman
     "UK3CB_NAP_O_DEM",                                                // Medic
     "UK3CB_NAP_O_MG_ASST",
-	"UK3CB_NAP_O_AA",                                           // Engineer
-    "UK3CB_NAP_O_LAT",
-    "UK3CB_NAP_O_AT"
+	"UK3CB_NAP_O_AA"                                              // Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
@@ -137,7 +131,7 @@ opfor_battlegroup_vehicles_low_intensity = [
 	"rhs_btr60_msv",
 	"rhs_btr70_msv",                                                 // GAZ-233014 (Armed)
     "rhs_btr80_msv",                                                    // BTR-80
-    "rhs_btr80a_msv",                                             // Ural-4320 Transport
+    "rhs_btr80a_msv"                                             // Ural-4320 Transport
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80a_msv",                                                   // BTR-80A
     "rhs_zsu234_aa",
@@ -154,21 +148,17 @@ opfor_troup_transports = [
     "RHS_Ural_MSV_01",                                                  // Ural-4320 Transport (Covered)
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80a_msv",                                                   // BTR-80A
-    "rhs_bmp2d_msv",  
-    "RHS_Mi8MTV3_vvsc",                                                  // BMP-2D
-    "RHS_Mi8MTV3_vvsc",  
-    "RHS_Mi8mt_Cargo_vvsc",                                           // Mi-8MT (Cargo)
+    "rhs_bmp2d_msv",                                                    // BMP-2D
+    "RHS_Mi8mt_Cargo_vvsc",                                             // Mi-8MT (Cargo)
     "RHS_Mi24P_AT_vvsc",                                                // Mi-24P (AT)
     "RHS_Mi24V_AT_vvsc"                                                 // Mi-24V (AT)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "RHS_Mi8mt_Cargo_vvsc",
-    "RHS_Mi8MTV3_heavy_vvsc",                                             // Mi-8MT (Cargo)
+    "RHS_Mi8mt_Cargo_vvsc",                                             // Mi-8MT (Cargo)
     "RHS_Mi24P_AT_vvsc",                                                // Mi-24P (AT)
-    "RHS_Mi24V_AT_vvsc",   
-    "RHS_Ka52_vvsc",                                             // Mi-24V (AT)
+    "RHS_Mi24V_AT_vvsc",                                                // Mi-24V (AT)
     "RHS_Ka52_vvsc"                                                     // Ka-52
 ];
 

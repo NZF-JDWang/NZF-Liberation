@@ -226,9 +226,8 @@ KPLIB_b_infantry_classes                    = KPLIB_b_infantry_classes          
 */
 KPLIB_o_squadStd    = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_heavygunner, opfor_rifleman, opfor_rifleman, opfor_grenadier, opfor_rpg];
 KPLIB_o_squadInf    = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_heavygunner, opfor_heavygunner, opfor_team_leader, opfor_rifleman, opfor_rifleman];
-KPLIB_o_squadHvyMG  = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_hmgGunner, opfor_hmgAssistant, opfor_team_leader, opfor_sharpshooter, opfor_rifleman];
-KPLIB_o_squadMortar  = [opfor_mortarGunner, opfor_mortarAssistant];
-KPLIB_o_squadSPG  = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_spgGunner, opfor_spgAssistant, opfor_team_leader, opfor_sharpshooter, opfor_rifleman];
+KPLIB_o_squadMortar = [opfor_squad_leader, opfor_medic, opfor_mortar_support, opfor_heavygunner, opfor_mortar_gunner, opfor_rifleman, opfor_grenadier, opfor_rpg];
+KPLIB_o_squadHMG    = [opfor_squad_leader, opfor_medic, opfor_hmg_gunner, opfor_hmg_support, opfor_rifleman, opfor_rifleman, opfor_rpg];
 KPLIB_o_squadTank   = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_rpg, opfor_team_leader, opfor_rifleman, opfor_at, opfor_at];
 KPLIB_o_squadAir    = [opfor_squad_leader, opfor_medic, opfor_machinegunner, opfor_rpg, opfor_team_leader, opfor_rifleman, opfor_aa, opfor_aa];
 
