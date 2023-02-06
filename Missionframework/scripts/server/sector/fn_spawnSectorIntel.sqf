@@ -20,7 +20,7 @@
 params [
     ["_sector", "", [""]],
     ["_range", 150, [0]],
-    ["_amount", 2 + (floor (random 3)), [0]]
+    ["_amount", 3 + (floor (random 3)), [0]]
 ];
 
 if (_sector isEqualTo "") exitWith {["Empty string given"] call BIS_fnc_error; false};

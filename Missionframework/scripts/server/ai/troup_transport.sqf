@@ -25,8 +25,9 @@ if ((alive _transVeh) && (alive (driver _transVeh))) then {
         [_x, _start_pos, _infGrp, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
     } foreach ([] call KPLIB_fnc_getSquadComp);
 
+   
     {_x moveInCargo _transVeh} forEach (units _infGrp);
-
+    
     while {(count (waypoints _infGrp)) != 0} do {deleteWaypoint ((waypoints _infGrp) select 0);};
 
     sleep 3;

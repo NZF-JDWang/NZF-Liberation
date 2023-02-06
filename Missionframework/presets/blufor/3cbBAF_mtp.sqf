@@ -209,7 +209,7 @@ blufor_squad_inf_light = [
     "UK3CB_BAF_LAT_ILAW_MTP",
     "UK3CB_BAF_Grenadier_MTP",
     "UK3CB_BAF_LSW_MTP",
-    "UK3CB_BAF_LSW_MTP",
+    "UK3CB_BAF_LAT_762_MTP_H",
     "UK3CB_BAF_Marksman_MTP",
     "UK3CB_BAF_Medic_MTP",
     "UK3CB_BAF_Engineer_MTP"
@@ -222,7 +222,7 @@ blufor_squad_inf = [
     "UK3CB_BAF_LAT_ILAW_MTP",
     "UK3CB_BAF_Grenadier_MTP",
     "UK3CB_BAF_LSW_MTP",
-    "UK3CB_BAF_LSW_MTP",
+    "UK3CB_BAF_LAT_762_MTP_H",
     "UK3CB_BAF_MGLMG_MTP",
     "UK3CB_BAF_Marksman_MTP",
     "UK3CB_BAF_Medic_MTP",
@@ -236,7 +236,7 @@ blufor_squad_at = [
     "UK3CB_BAF_Rifleman_MTP",
     "UK3CB_BAF_MAT_MTP",
     "UK3CB_BAF_MAT_MTP",
-    "UK3CB_BAF_MAT_MTP",
+    "UK3CB_BAF_LAT_762_MTP_H",
     "UK3CB_BAF_Medic_MTP",
     "UK3CB_BAF_Rifleman_MTP"
 ];
@@ -248,7 +248,7 @@ blufor_squad_aa = [
     "UK3CB_BAF_Rifleman_MTP",
     "B_soldier_AA_F",
     "B_soldier_AA_F",
-    "B_soldier_AA_F",
+    "UK3CB_BAF_LAT_762_MTP_H",
     "UK3CB_BAF_Medic_MTP",
     "UK3CB_BAF_Rifleman_MTP"
 ];
@@ -261,8 +261,6 @@ blufor_squad_recon = [
     "UK3CB_BAF_FAC_MTP_REC",
     "UK3CB_BAF_MGLMG_MTP_REC",
     "UK3CB_BAF_Marksman_MTP_REC",
-    "UK3CB_BAF_Sniper_MTP_Ghillie_L115",
-    "UK3CB_BAF_Spotter_MTP_Ghillie_L85",
     "UK3CB_BAF_Medic_MTP",
     "UK3CB_BAF_Engineer_MTP"
 ];

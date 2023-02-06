@@ -74,3 +74,6 @@ if (isServer) then {
 ["rhs_vmf_recon_rifleman", "InitPost", {
    (_this # 0) execVM "scripts\paratrooperGear.sqf";
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
+GR_MISSION_CHANCE = 0;

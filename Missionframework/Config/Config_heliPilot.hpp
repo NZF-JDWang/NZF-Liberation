@@ -30,6 +30,7 @@ class helipilot {
 		"UK3CB_BAF_U_HeliPilotCoveralls_Army",
 		"UK3CB_BAF_V_Pilot_A",
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"rhsusf_ihadss",
 		"ToolKit"
 	};
 	arsenalBackpacks[] = {

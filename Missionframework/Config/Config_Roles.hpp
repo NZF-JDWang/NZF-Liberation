@@ -198,7 +198,9 @@ items[] = {
 	"kat_Pulseoximeter",
 	"MS_Strobe_Mag_1",
 	"MS_Strobe_Mag_2",
-	"nzf_headbag_inventory"
+	"nzf_headbag_inventory",
+	"ACRE_VHF30108SPIKE",
+	"ACRE_VHF30108MAST"
 	};
 	backpacks[] = {
 

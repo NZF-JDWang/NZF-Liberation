@@ -69,7 +69,8 @@ militia_vehicles = [
     "UK3CB_NAP_O_UAZ_SPG9",// GAZ-233014 (Armed)
 	"UK3CB_NAP_O_Hilux_Pkm",
 	"UK3CB_NAP_O_Hilux_M2",
-	"UK3CB_NAP_O_Hilux_Dshkm"                                                 
+	"UK3CB_NAP_O_Hilux_Dshkm",
+    "UK3CB_NAP_O_V3S_Zu23"                                                
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
@@ -87,7 +88,6 @@ opfor_vehicles = [
     "rhs_bmp2k_msv",                                                   // BMP-2K
     "rhs_brm1k_msv",                                                    // BRM-1K
     "UK3CB_O_2S6M_Tunguska_VPV", 
-	"UK3CB_O_2S6M_Tunguska_VPV",                                                   // ZSU-23-4V
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_t72be_tv"                                                // T90SA (2016)
 ];
@@ -117,7 +117,6 @@ opfor_battlegroup_vehicles = [
     "rhs_bmp2k_msv",                                                    // BMP-2K
     "rhs_brm1k_msv",                                                    // BRM-1K
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
-    "UK3CB_O_2S6M_Tunguska_VPV",                                                    // ZSU-23-4V
     "rhs_t80",                                                          // T80
     "rhs_t80",                                                          // T80
     "rhs_t90a_tv",
@@ -151,10 +150,14 @@ opfor_battlegroup_vehicles_low_intensity = [
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 opfor_troup_transports = [
     "RHS_Ural_Open_MSV_01",                                             // Ural-4320 Transport
-    "RHS_Ural_MSV_01",                                                  // Ural-4320 Transport (Covered)
+    "RHS_Ural_MSV_01",  
+    "rhs_btr60_msv",
+	"rhs_btr70_msv",                                                 // Ural-4320 Transport (Covered)
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80a_msv",                                                   // BTR-80A
-    "rhs_bmp2d_msv",  
+    "rhs_bmp2d_msv",                                                    // BMP-2D
+    "rhs_bmp2k_msv",                                                    // BMP-2K
+    "rhs_brm1k_msv",  
     "RHS_Mi8MTV3_vvsc",                                                  // BMP-2D
     "RHS_Mi8MTV3_vvsc",  
     "RHS_Mi8mt_Cargo_vvsc",                                           // Mi-8MT (Cargo)
@@ -165,15 +168,22 @@ opfor_troup_transports = [
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
     "RHS_Mi8mt_Cargo_vvsc",
+    "RHS_Mi8MTV3_heavy_vvsc",
+    "RHS_Mi8MTV3_heavy_vvsc",
     "RHS_Mi8MTV3_heavy_vvsc",                                             // Mi-8MT (Cargo)
     "RHS_Mi24P_AT_vvsc",                                                // Mi-24P (AT)
     "RHS_Mi24V_AT_vvsc",   
+    "RHS_Ka52_vvsc", 
     "RHS_Ka52_vvsc",                                             // Mi-24V (AT)
     "RHS_Ka52_vvsc"                                                     // Ka-52
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
+    "UK3CB_CW_SOV_O_LATE_MIG21_CAS",
+    "UK3CB_CW_SOV_O_LATE_MIG21_CAS",
+    "UK3CB_CW_SOV_O_LATE_MIG21_CAS",
     "RHS_Su25SM_vvsc",                                                  // Su-25
-    "RHS_Su25SM_KH29_vvsc"                                              // Su-25 (KH29)
+    "RHS_Su25SM_KH29_vvsc" ,
+    "rhs_mig29sm_vvsc"                                             // Su-25 (KH29)
 ];

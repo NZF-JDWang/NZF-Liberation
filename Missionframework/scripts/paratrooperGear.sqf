@@ -21,6 +21,8 @@ _unit addPrimaryWeaponItem "rhs_acc_grip_ffg2";
 _unit addWeapon "rhs_weap_pya";
 _unit addHandgunItem "rhs_mag_9x19_17";
 
+if (random 100 > 70) then {_unit addWeapon "rhs_weap_rpg26"};
+
 _unit forceAddUniform "Voin_Uni_Gorka_17";
 _unit addVest "Crye_AVS_MC_TeamLeader_6_NoBelt";
 

@@ -5,7 +5,7 @@ if ( isNil "reinforcements_sector_under_attack" ) then { reinforcements_sector_u
 while { count (units _grp) > 0 } do {
 
     if ( reinforcements_sector_under_attack != "" ) then {
-/*
+
         while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
         {_x doFollow leader _grp} foreach units _grp;
 
@@ -26,8 +26,8 @@ while { count (units _grp) > 0 } do {
         _waypoint setWaypointType "CYCLE";
 
         sleep 300;
-        */
-        [_grp, getMarkerPos reinforcements_sector_under_attack] spawn lambs_wp_fnc_taskAssault;
+        
+        
     };
 
     if ( reinforcements_sector_under_attack == "" ) then {
@@ -38,7 +38,7 @@ while { count (units _grp) > 0 } do {
                 _sectors_patrol pushBack _x;
             };
         } foreach (sectors_allSectors - blufor_sectors);
-/*
+
         while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
         {_x doFollow leader _grp} foreach units _grp;
 
@@ -56,9 +56,8 @@ while { count (units _grp) > 0 } do {
         _waypoint setWaypointCompletionRadius 100;
         _waypoint = _grp addWaypoint [_patrol_startpos , 300];
         _waypoint setWaypointType "CYCLE";
-*/
-        [_grp, 2500,15,[],[],true,true,2] spawn lambs_wp_fnc_taskHunt;
-    };
+
+        };
 
     waitUntil { sleep 5;(count (units _grp) == 0) || (reinforcements_sector_under_attack != "") };
 };

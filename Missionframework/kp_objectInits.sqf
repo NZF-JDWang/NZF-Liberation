@@ -52,7 +52,10 @@ KPLIB_objectInits = [
         ["rhs_vdv_recon_rifleman_l"],
         {_this addBackpack "RHS_Podnos_Bipod_Bag";}
     ],
-    
+     [
+        ["UK3CB_CW_SOV_O_LATE_MIG21_CAS"],
+        {[_this,["SOV_2",1],true] call BIS_fnc_initVehicle;}
+    ],
 
     // Add helipads to zeus, as they can't be recycled after built
     [

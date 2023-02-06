@@ -26,9 +26,11 @@ if (isNull _obj) exitWith {["Null object given"] call BIS_fnc_error; false};
 
 if (_force || {!((typeOf _obj) in KP_liberation_ace_crates) && {KP_liberation_clear_cargo || {!((typeOf _obj) isKindOf "AllVehicles")}}}) then {
     clearWeaponCargoGlobal _obj;
-    clearMagazineCargoGlobal _obj;
+    //clearMagazineCargoGlobal _obj;
     clearBackpackCargoGlobal _obj;
     clearItemCargoGlobal _obj;
+    _obj addItemCargoGlobal ["toolkit" ,1];
 };
+
 
 true

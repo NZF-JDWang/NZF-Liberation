@@ -14,7 +14,18 @@ while { local _unit && alive _unit && !(captive _unit)} do {
     if (_ratio > .5) then {
 
         [(group _unit)] call lambs_wp_fnc_taskReset;
-        [(group _unit), _sector, 150, [], false, false, -2, true] call lambs_wp_fnc_taskGarrison;
+
+        if (random 100 > 66) then {
+           [(group _unit), _sector, 150, [], false, false, -2, true] call lambs_wp_fnc_taskGarrison; 
+        }
+        else {
+            if (random 100 > 50) then {
+                [(group _unit), _sector, 100] spawn lambs_wp_fnc_taskCQB;
+            }
+            else {
+                [(group _unit), 500] spawn lambs_wp_fnc_taskRush;
+            };
+        };
     };
     sleep 120;
 };
