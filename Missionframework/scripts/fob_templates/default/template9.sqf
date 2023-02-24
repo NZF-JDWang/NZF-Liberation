@@ -23,7 +23,6 @@ private _objects_to_build = [
     ["Land_HBarrierTower_F", [-17.88, 17.11, 0.00], 90.00],
     ["Land_HBarrierTower_F", [21.12, 18.04, 0.00], 270.00],
     ["Land_HBarrierTower_F", [21.43, -14.52, 0.00], 270.00],
-    [opfor_mrap, [-12.85, -10.52, -0.00], 180.00],
     [opfor_transport_truck, [-8.65, -8.70, 0.00], 180.00]
 ];
 private _objectives_to_build = [

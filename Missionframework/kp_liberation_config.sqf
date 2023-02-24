@@ -219,8 +219,9 @@ GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy
 
 GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 5000;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [15, 10, 8, 5];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
+KP_liberation_civ_supplies_impact = 20;                                  // The percentage increase received when completing a Humanitarian Aid secondary objective
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 60;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
@@ -244,7 +245,7 @@ KP_liberation_cr_kill_penalty = 10;                                      // Civi
 KP_liberation_cr_building_penalty = 5;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 10;                                       // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_sector_gain = 15;                                       // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 25;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
 KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 

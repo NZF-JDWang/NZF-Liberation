@@ -112,6 +112,11 @@ KPLIB_objectInits = [
         [KP_liberation_small_storage_building, KP_liberation_large_storage_building],
         {_this setVariable ["KP_liberation_storage_type", 0, true];}
     ],
+    // Remove ACE cookoff for OPFOR FOB items
+    [
+        [opfor_fuel_container, opfor_ammo_container],
+        {_this setVariable ["ace_cookoff_enable", false, true];}
+    ],
 
     // Add ACE variables to corresponding building types
     [

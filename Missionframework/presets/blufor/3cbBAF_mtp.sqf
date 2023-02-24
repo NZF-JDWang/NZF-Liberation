@@ -87,6 +87,7 @@ light_vehicles = [
     ["UK3CB_BAF_Jackal2_L2A1_W_MTP",100,100,100],
     ["UK3CB_BAF_LandRover_WMIK_Milan_FFR_Green_A_MTP",50,150,50],
     ["UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",100,0,50],
+    ["UK3CB_BAF_MAN_HX58_Cargo_Green_A_MTP",100,0,25],
     ["UK3CB_BAF_MAN_HX58_Fuel_Green_MTP",50,0,200],
     ["UK3CB_BAF_MAN_HX58_Repair_Green_MTP",200,0,50],
     ["UK3CB_BAF_MAN_HX58_Cargo_Green_A_MTP",200,0,50],
@@ -192,7 +193,8 @@ support_vehicles = [
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,250,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
-    ["UK3CB_BAF_MAN_HX60_Container_Servicing_Ground_Green",200,200,200]                                      // Huron Ammo
+    ["UK3CB_BAF_MAN_HX60_Container_Servicing_Ground_Green",200,200,200],
+    ["UK3CB_BAF_Vehicles_Servicing_Aircraft_Point",200,200,200]                                      // Huron Ammo
 ];
 
 /*

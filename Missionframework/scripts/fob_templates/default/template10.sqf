@@ -22,7 +22,6 @@ private _objects_to_build = [
     ["Land_HBarrier_Big_F", [21.51, -15.29, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [8.11, 24.41, 0.00], 0.00],
     ["Land_HBarrier_Big_F", [9.42, -21.10, 0.00], 0.00],
-    [opfor_mrap_armed, [12.38, 7.12, -0.00], 270.00],
     [opfor_transport_truck, [13.36, 2.53, 0.00], 270.00]
 ];
 

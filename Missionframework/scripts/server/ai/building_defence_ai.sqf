@@ -15,7 +15,7 @@ while { local _unit && alive _unit && !(captive _unit)} do {
 
         [(group _unit)] call lambs_wp_fnc_taskReset;
 
-        if (random 100 > 66) then {
+        if (random 100 > 75) then {
            [(group _unit), _sector, 150, [], false, false, -2, true] call lambs_wp_fnc_taskGarrison; 
         }
         else {

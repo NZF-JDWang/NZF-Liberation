@@ -43,9 +43,7 @@ private _objects_to_build = [
     ["Land_HBarrier_Big_F", [6.52, -9.98, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [6.78, -18.56, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [6.93, 23.16, 0.00], 180.13],
-    [opfor_flag, [14.12, 19.01, 0.00], 0.00],
-    [opfor_mrap_armed, [23.49, 2.01, -0.00], 0.00],
-    [opfor_mrap, [16.54, 1.76, -0.00], 0.00]
+    [opfor_flag, [14.12, 19.01, 0.00], 0.00]
 ];
 
 private _objectives_to_build = [

@@ -1,11 +1,9 @@
 private _objects_to_build = [
-    [ opfor_mrap, [13.31, 0, 0.01], 268.69 ],
     [ "Land_Cargo_HQ_V3_F", [11.47, -12.17, 0], 89.97 ],
     [ "Land_CncBarrierMedium4_F", [-15.55, -1.69, 0], 90.88 ],
     [ "Land_HBarrierBig_F", [-13.27, -8.61, 0], 91.24 ],
     [ opfor_transport_truck, [1.21, 15.8, -0.03], 274.41 ],
     [ "Land_BarGate_F", [-16.65, 2.15, 0], 90.88 ],
-    [ opfor_mrap_armed, [-20.26, -3.22, 0.01], 359.22 ],
     [ "Land_HBarrierBig_F", [1.23, 20.94, 0], 0.69 ],
     [ "Land_Cargo_Patrol_V3_F", [16.23, 15.36, 0], 269.81 ],
     [ opfor_flag, [-12.14, 18.09, 0], 90 ],

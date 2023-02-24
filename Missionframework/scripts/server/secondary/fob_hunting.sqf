@@ -1,5 +1,5 @@
 
-_defenders_amount = (15 * (sqrt (GRLIB_unitcap))) min 15;
+_defenders_amount = (30 * (sqrt (GRLIB_unitcap))) min 24;
 
 _spawn_marker = [2000,999999,false] call KPLIB_fnc_getOpforSpawnPoint;
 if (_spawn_marker == "") exitWith {["Could not find position for fob hunting mission", "ERROR"] call KPLIB_fnc_log;};
@@ -9,6 +9,7 @@ _base_position = markerpos _spawn_marker;
 _base_objects = [];
 _base_objectives = [];
 _base_defenders = [];
+_vehtospawn = [];
 
 ([] call (compile preprocessFileLineNumbers (selectRandom KPLIB_fob_templates))) params [
     "_objects_to_build",
@@ -88,7 +89,7 @@ while {(count _idxselected) < _defenders_amount && (count _idxselected) < (count
     private _nextDefender = [_nextclass, _nextpos, _grpdefenders, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
     _nextDefender setdir _nextdir;
     _nextDefender setpos _nextpos;
-    [_nextDefender] spawn building_defence_ai;
+    [_nextDefender, _spawn_marker] spawn building_defence_ai;
 } forEach _idxselected;
 
 private _sentryMax = ceil ((3 + (floor (random 4))) * (sqrt (GRLIB_unitcap)));
@@ -99,6 +100,25 @@ for [{_idx=0}, {_idx < _sentryMax}, {_idx=_idx+1}] do {
     [opfor_sentry, _base_sentry_pos, _grpsentry, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
 };
 
+[_grpsentry, getMarkerPos _spawn_marker, 50, [], true, true] call lambs_wp_fnc_taskCamp;
+JDTEST = (markerPos _spawn_marker);
+//********************************************************************************************* */
+if ((random 100) > (66 / GRLIB_difficulty_modifier)) then {_vehtospawn pushback (selectRandom militia_vehicles);};
+if ((random 100) > (33 / GRLIB_difficulty_modifier)) then {_vehtospawn pushback (selectRandom militia_vehicles);};   
+if ((random 100) > (33 / GRLIB_difficulty_modifier)) then {_vehtospawn pushback ([] call KPLIB_fnc_getAdaptiveVehicle);
+    
+};
+{
+    _vehicle = [markerPos _spawn_marker, _x] call KPLIB_fnc_spawnVehicle;
+        if (random 10 > 4)then {
+            [group ((crew _vehicle) select 0), (markerPos _spawn_marker), 200,5,[],true, true] call lambs_wp_fnc_taskPatrol;
+        };
+   
+    sleep 0.25;
+} forEach _vehtospawn;
+
+
+/*
 while {(count (waypoints _grpsentry)) != 0} do {deleteWaypoint ((waypoints _grpsentry) select 0);};
 private _waypoint = [];
 {
@@ -111,7 +131,7 @@ private _waypoint = [];
 
 _waypoint = _grpsentry addWaypoint [[(_base_position select 0) + ((_base_corners select 0) select 0), (_base_position select 1) + ((_base_corners select 0) select 1), 0], -1];
 _waypoint setWaypointType "CYCLE";
-
+*/
 _objectives_alive = true;
 
 secondary_objective_position = _base_position;
