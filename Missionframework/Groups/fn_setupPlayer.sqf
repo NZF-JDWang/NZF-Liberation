@@ -11,12 +11,13 @@ params [
 
 private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
 private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
+[_defaultLoadout] call acre_api_fnc_filterUnitLoadout;
 
 if (_isRespawn) then {
 	player setUnitLoadout (missionNamespace getVariable ["DT_savedLoadout",_defaultLoadout]);
 	player assignTeam _team;
 } else {
-	DT_savedLoadout = _defaultLoadout;
+	DT_savedLoadout = [_defaultLoadout] call acre_api_fnc_filterUnitLoadout;
 	player setUnitLoadout _defaultLoadout;
 	
 	private _weapons = getArray(_roleConfig >> "arsenalWeapons");

@@ -19,7 +19,8 @@ class jtac {
 	};
 
 	arsenalWeapons[] = {
-
+		"UK3CB_BAF_L85A2_UGL",
+		"UK3CB_BAF_L85A2_UGL_HWS"
 	};
 
 	arsenalItems[] = {

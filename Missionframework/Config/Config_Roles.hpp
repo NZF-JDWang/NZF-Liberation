@@ -200,7 +200,8 @@ items[] = {
 	"MS_Strobe_Mag_2",
 	"nzf_headbag_inventory",
 	"ACRE_VHF30108SPIKE",
-	"ACRE_VHF30108MAST"
+	"ACRE_VHF30108MAST",
+	"kat_CaffeineItem"
 	};
 	backpacks[] = {
 

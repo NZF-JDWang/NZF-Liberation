@@ -1,5 +1,5 @@
 waitUntil {!isNil "KPLIB_initServer"};
-
+/*
 params ["_unit"];
 
 _unit addEventHandler ["Killed", {
@@ -14,5 +14,6 @@ _unit addEventHandler ["Respawn", {
         _unit setUnitLoadout Mission_loadout;
     };
 }];
+*/
 [] call KPLIB_fnc_addActionsPlayer;
 

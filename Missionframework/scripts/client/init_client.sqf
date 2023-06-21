@@ -75,7 +75,7 @@ player addEventHandler ["GetInMan", {[_this select 2] call KPLIB_fnc_setVehicleC
 player addEventHandler ["GetInMan", {[_this select 2] call kp_vehicle_permissions;}];
 player addEventHandler ["SeatSwitchedMan", {[_this select 2] call kp_vehicle_permissions;}];
 player addEventHandler ["HandleRating", {if ((_this select 1) < 0) then {0};}];
-
+/*
 // Disable stamina, if selected in parameter
 if (!GRLIB_fatigue) then {
     player enableStamina false;
@@ -87,7 +87,7 @@ if (!KPLIB_sway) then {
     player setCustomAimCoef 0.1;
     player addEventHandler ["Respawn", {player setCustomAimCoef 0.1;}];
 };
-
+*/
 execVM "scripts\client\ui\intro.sqf";
 
 [player] joinSilent (createGroup [GRLIB_side_friendly, true]);
@@ -109,16 +109,17 @@ if (player isEqualTo ([] call KPLIB_fnc_getCommander)) then {
 //*****************************************************************************************************
 player addEventHandler ["Killed", {
     params ["_unit"];
-    Mission_loadout = getUnitLoadout player;
-    Team_ID = assignedTeam player;
+    //Mission_loadout = getUnitLoadout player;
+    _Mission_loadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
+    //_Team_ID = assignedTeam player;
 }];
 
 player addEventHandler ["Respawn", {
     params ["_unit"];
 
     if (!isNil "Mission_loadout") then {
-        player setUnitLoadout Mission_loadout;
-        player assignTeam Team_ID;
+        player setUnitLoadout _Mission_loadout;
+       // player assignTeam _Team_ID;
         player spawn NZF_fnc_bloodpatch;
     };
 }];
@@ -178,7 +179,6 @@ if (DT_isACEEnabled) then {
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups; 
 
 player spawn KPLIB_fnc_bloodpatch;
-
 
 
 

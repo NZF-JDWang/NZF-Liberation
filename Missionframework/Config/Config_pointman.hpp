@@ -16,7 +16,7 @@ class pointman {
 	icon = "a3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";
 
 	defaultLoadout[] = {
-	{"UK3CB_BAF_L85A2_RIS","","UK3CB_BAF_LLM_IR_Black","rhsusf_acc_eotech_xps3",{"UK3CB_BAF_556_30Rnd",30},{},"UK3CB_underbarrel_acc_grippod"},{},{"ACE_VMM3","","","",{},{},""},{"UK3CB_BAF_U_CombatUniform_MTP",{{"ACE_CableTie",2},{"ACE_DefusalKit",1},{"ACE_EarPlugs",1},{"ACE_Flashlight_MX991",1},{"ACE_M26_Clacker",1},{"ACE_MapTools",1},{"ACE_microDAGR",1},{"ACE_SpraypaintRed",1},{"ItemcTabHCam",1},{"ItemAndroid",1}}},{"UK3CB_BAF_V_Osprey_Rifleman_C",{{"nzf_fak",1},{"UK3CB_BAF_HMNVS",1},{"ACRE_PRC343",1},{"rhs_mag_m67",3,1},{"rhs_mag_mk84",3,1}}},{"UK3CB_BAF_B_Bergen_MTP_PointMan_L_A",{{"rhsusf_m112_mag",5,1},{"UK3CB_BAF_12G_Slugs",10,8},{"UK3CB_BAF_12G_Pellets",10,8},{{"UK3CB_BAF_L128A1","","UK3CB_BAF_LLM_IR_Black","rhsusf_acc_eotech_xps3",{"UK3CB_BAF_12G_Slugs",8},{},""},1}}},"UK3CB_BAF_H_Mk7_Camo_C","UK3CB_BAF_G_Tactical_Clear",{"rhsusf_bino_m24_ARD","","","",{},{},""},{"ItemMap","","ItemRadioAcreFlagged","ItemCompass","ATM_ALTIMETER",""}
+	{"UK3CB_BAF_L85A2_RIS","","UK3CB_BAF_LLM_IR_Black","rhsusf_acc_eotech_xps3",{"UK3CB_BAF_556_30Rnd",30},{},"UK3CB_underbarrel_acc_grippod"},{},{"ACE_VMM3","","","",{},{},""},{"UK3CB_BAF_U_CombatUniform_MTP",{{"ACE_CableTie",2},{"ACE_DefusalKit",1},{"ACE_EarPlugs",1},{"ACE_Flashlight_MX991",1},{"ACE_M26_Clacker",1},{"ACE_MapTools",1},{"ACE_microDAGR",1},{"ACE_SpraypaintRed",1},{"ItemcTabHCam",1},{"ItemAndroid",1}}},{"UK3CB_BAF_V_Osprey_Rifleman_C",{{"nzf_fak",1},{"UK3CB_BAF_HMNVS",1},{"ACRE_PRC343",1},{"rhs_mag_m67",3,1},{"rhs_mag_mk84",3,1},{"UK3CB_BAF_556_30Rnd",5,30},{"UK3CB_BAF_556_30Rnd_T",3,30}}},{"UK3CB_BAF_B_Bergen_MTP_PointMan_L_A",{{"rhsusf_m112_mag",5,1},{"UK3CB_BAF_12G_Slugs",10,8},{"UK3CB_BAF_12G_Pellets",10,8},{{"UK3CB_BAF_L128A1","","UK3CB_BAF_LLM_IR_Black","rhsusf_acc_eotech_xps3",{"UK3CB_BAF_12G_Slugs",8},{},""},1}}},"UK3CB_BAF_H_Mk7_Camo_C","UK3CB_BAF_G_Tactical_Clear",{"rhsusf_bino_m24_ARD","","","",{},{},""},{"ItemMap","","ItemRadioAcreFlagged","ItemCompass","ATM_ALTIMETER",""}
 	};
 
 	arsenalWeapons[] = {
@@ -41,6 +41,7 @@ class pointman {
 		"tsp_stickCharge_auto_mag",
 		"ACE_M26_Clacker",
 		"ACE_Clacker",
+		"ACE_DefusalKit",
 		"ToolKit"
 	};
 	arsenalBackpacks[] = {

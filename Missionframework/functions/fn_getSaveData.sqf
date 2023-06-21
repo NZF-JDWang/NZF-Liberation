@@ -135,7 +135,7 @@ private ["_fobPos", "_fobObjects", "_grpUnits", "_fobMines"];
     } forEach (_allBlueGroups select {(_fobPos distance2D (leader _x)) < (GRLIB_fob_range * 1.2)});
 
     // Save all mines around FOB
-    _fobMines = allMines inAreaArray [_fobPos, GRLIB_fob_range * 1.2, GRLIB_fob_range * 1.2];
+    _fobMines = allMines inAreaArray [_fobPos, GRLIB_fob_range * 2, GRLIB_fob_range * 2];
     _allMines append (_fobMines apply {[
         getPosWorld _x,
         [vectorDirVisual _x, vectorUpVisual _x],
