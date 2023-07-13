@@ -77,3 +77,5 @@ if (isServer) then {
 
 
 GR_MISSION_CHANCE = 0;
+//[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
+if (isServer) then {[1500,-1,true,500,5000,1000]execvm "zbe_cache\main.sqf"};

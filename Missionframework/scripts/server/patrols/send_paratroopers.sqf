@@ -34,6 +34,7 @@ if (isNull _chopper_type) then {
 };
 
 private _para_group = createGroup [GRLIB_side_enemy, true];
+_para_group setVariable ["zbe_cacheDisabled",true];
 
 while {(count (units _para_group)) < 8} do {
     [opfor_paratrooper, markerPos _spawnsector, _para_group] call KPLIB_fnc_createManagedUnit;

@@ -120,7 +120,7 @@ player addEventHandler ["Respawn", {
     if (!isNil "Mission_loadout") then {
         player setUnitLoadout _Mission_loadout;
        // player assignTeam _Team_ID;
-        player spawn NZF_fnc_bloodpatch;
+        
     };
 }];
 //*****************************************************************************************************
@@ -164,7 +164,7 @@ if (DT_isACEEnabled) then {
 	[player,1,["ACE_SelfActions"],_arsenalCategory] call ace_interact_menu_fnc_addActionToObject;
 
 	["ace_arsenal_displayClosed",{
-		DT_savedLoadout = getUnitLoadout player;
+		DT_savedLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
        	}] call CBA_fnc_addEventHandler;
 } else {
 	{
@@ -172,13 +172,12 @@ if (DT_isACEEnabled) then {
 	} forEach DT_arsenalBoxes;
 
 	[missionNamespace,"arsenalClosed",{
-		DT_savedLoadout = getUnitLoadout player;
+		DT_savedLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
 	}] call BIS_fnc_addScriptedEventHandler;
 };
 
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups; 
 
-player spawn KPLIB_fnc_bloodpatch;
 
 
 
